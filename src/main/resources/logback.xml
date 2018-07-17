@@ -1,0 +1,13 @@
+<configuration >
+<appender name="MONGODB" class="com.example.demo.MongoDBAppender">
+        <DbHost>127.0.0.1</DbHost>
+        <DbPort>27017</DbPort>
+        <DbName>admin</DbName>
+
+
+</appender>
+
+    <logger name="MONGODB" level="INFO">
+        <appender-ref ref="MONGODB"/>
+    </logger>
+</configuration>
